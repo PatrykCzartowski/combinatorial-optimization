@@ -15,8 +15,9 @@ def find_C3_matrix_multiplication(adj_matrix):
     A_squared = np.matmul(A, A)
     n = A.shape[0]
     for i in range(n):
-        if A_squared[i, i] > 0 and A[i, i] == 0:
-            return True
+        for j in range(n):
+            if i != j and A[i, j] == 1 and A_squared[i, j] > 0:
+                return True
     return False 
 
 def convert_adj_list_to_adj_matrix(adj_list):
