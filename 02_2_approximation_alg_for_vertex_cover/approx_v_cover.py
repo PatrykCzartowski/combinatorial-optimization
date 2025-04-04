@@ -84,7 +84,7 @@ def main():
     
     while True:
         display_menu()
-        choice = input("\nChoose option (0-7): ").strip()
+        choice = input("\nChoose option (0-5): ").strip()
         
         if choice == "1":
             G = create_graph_from_adjacency_list()
