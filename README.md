@@ -1,1 +1,55 @@
-# combinatorial-optimization
+# Combinatorial Optimization Algorithms
+
+This repository contains implementations of various combinatorial optimization algorithms, focusing on approximation algorithms for NP-hard problems.
+
+## Algorithms Implemented
+
+### 1. Verification of C3 Cycle Presence in a Graph
+- Located in `/01_Verification_of_C3_cycle_presense_in_a_graph/`
+- Implements two methods for detecting C3 cycles (triangles) in graphs:
+  - Naive approach (checking all possible triplets)
+  - Matrix multiplication approach (more efficient)
+
+### 2. 2-Approximation Algorithm for Vertex Cover
+- Located in `/02_2_approximation_alg_for_vertex_cover/`
+- Provides a polynomial-time algorithm that guarantees a vertex cover at most twice the size of the optimal solution
+- Features:
+  - Interactive graph creation
+  - Random graph generation
+  - Visualization of the solution
+
+### 3. 2-Approximation Algorithm for Steiner Tree
+- Located in `/03_2_approximation_alg_for_steiner_tree/`
+- Implements the classic 2-approximation algorithm for the Steiner Tree problem:
+  1. Creating a complete graph on terminal vertices
+  2. Finding MST of the complete graph
+  3. Expanding MST edges into shortest paths
+  4. Finding MST of the expanded graph
+  5. Pruning non-terminal leaves
+- Features:
+  - Interactive mode with detailed steps
+  - Example graph with visualization
+  - Support for custom graph input
+
+## Usage
+
+Each algorithm can be run independently from its directory. Most implementations include:
+
+- Interactive command-line interface
+- Visualization capabilities (requires matplotlib)
+- Step-by-step explanations of algorithm execution
+- Options to input custom graphs or use provided examples
+
+### Requirements
+- Python 3.x
+- NetworkX
+- NumPy
+- Matplotlib (for visualization)
+
+## Background
+
+These implementations are designed for educational purposes to demonstrate common approximation techniques for NP-hard combinatorial optimization problems.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

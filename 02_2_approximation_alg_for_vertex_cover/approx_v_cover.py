@@ -1,6 +1,5 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-import random
 import sys
 
 def approx_vertex_cover(graph):
@@ -8,6 +7,7 @@ def approx_vertex_cover(graph):
     vertex_cover = set()
     while G.edges():
         u, v = list(G.edges())[0]
+        print(f"edge: {u, v}")
         vertex_cover.add(u)
         vertex_cover.add(v)
         edges_to_remove = list(G.edges(u)) + list(G.edges(v))
@@ -84,7 +84,7 @@ def main():
     
     while True:
         display_menu()
-        choice = input("\nChoose option (0-7): ").strip()
+        choice = input("\nChoose option (0-5): ").strip()
         
         if choice == "1":
             G = create_graph_from_adjacency_list()
