@@ -31,6 +31,22 @@ This repository contains implementations of various combinatorial optimization a
   - Example graph with visualization
   - Support for custom graph input
 
+### 4. 1.5-Approximation Christofides Algorithm for TSP
+- Located in `/04_Christofides_algorithm/`
+- Implements the Christofides algorithm for the Traveling Salesman Problem:
+  1. Computing a minimum spanning tree
+  2. Finding vertices with odd degree in the MST
+  3. Computing minimum-weight perfect matching for odd-degree vertices
+  4. Creating an Eulerian multigraph
+  5. Finding an Eulerian circuit
+  6. Converting the Eulerian circuit to a Hamiltonian cycle
+- Features:
+  - Triangle inequality verification (required for 1.5-approximation guarantee)
+  - Multiple graph creation options including Euclidean graphs
+  - Detailed step-by-step explanation
+  - Visualization of the solution
+  - Interactive user interface
+
 ## Usage
 
 Each algorithm can be run independently from its directory. Most implementations include:
