@@ -47,6 +47,21 @@ This repository contains implementations of various combinatorial optimization a
   - Visualization of the solution
   - Interactive user interface
 
+### 5. Critical Path Method (CPM) for Project Scheduling
+- Located in `/05_Critical_path_method/`
+- Implements the Critical Path Method for project scheduling and management:
+  1. Task dependency modeling with directed acyclic graphs
+  2. Calculation of earliest and latest start/finish times
+  3. Identification of critical path and slack time
+  4. Generation of project schedule and duration
+- Features:
+  - Interactive task input with dependency validation
+  - Multiple network representations (Activity-on-Node and Activity-on-Arc)
+  - Visual Gantt chart for project schedule
+  - Critical path highlighting in all visualizations
+  - Support for custom projects or example task set
+  - Detection of circular dependencies
+
 ## Usage
 
 Each algorithm can be run independently from its directory. Most implementations include:
