@@ -62,6 +62,21 @@ This repository contains implementations of various combinatorial optimization a
   - Support for custom projects or example task set
   - Detection of circular dependencies
 
+### 6. Hu's Algorithm for P|p_j=1,in-tree|C_max
+- Located in `/06_Hu_algorithm/`
+- Implements Hu's algorithm for scheduling unit-time tasks with precedence constraints:
+  1. Verification of graph structure (in-tree, out-tree, forest)
+  2. Conversion of out-tree to in-tree if necessary
+  3. Calculation of task levels (longest path from any leaf)
+  4. Task scheduling based on decreasing level order
+- Features:
+  - Support for both in-trees and out-trees
+  - Automatic conversion to in-tree when needed
+  - Optimal scheduling with minimum required processors
+  - Visualization of task dependency graph with levels
+  - Visual representation of the final schedule
+  - Interactive graph creation and example graphs
+
 ## Usage
 
 Each algorithm can be run independently from its directory. Most implementations include:
